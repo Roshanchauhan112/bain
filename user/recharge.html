@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sm:w-[90%] lg:w-[50%] mx-auto">
+        <div class="container mx-auto py-4 px-6 flex items-center">
+            <button onclick="window.location.href='/user.html'" class="text-gray-700 hover:text-gray-900">
+                <i class="fa fa-arrow-left mr-2"></i>Back
+            </button>
+            <div class="flex-grow text-center">
+                <h1 class="text-3xl font-bold text-gray-800">Details</h1>
+            </div>
+            <div>
+                Records
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-white shadow-sm  sm:w-[90%] lg:w-[50%] mx-auto">
+        <div class="">
+            <div class="flex">
+                <button id="rupee-btn" class="w-1/2 bg-red-500 text-white py-2"
+                    onclick="showContent('rupee')">Rupee</button>
+                <button id="usdt-btn" class="w-1/2 bg-white text-gray-700 border py-2"
+                    onclick="showContent('usdt')">USDT</button>
+            </div>
+
+            <div id="rupee-content" class="bg-white shadow-lg rounded-lg mt-5">
+                <h2 class="text-lg font-bold p-4">Payment channel</h2>
+                <ul>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY18</span>
+                        </div>
+                        <input type="radio" name="payment" checked>
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY20</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY21</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY18</span>
+                        </div>
+                        <input type="radio" name="payment" checked>
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY20</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY21</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY18</span>
+                        </div>
+                        <input type="radio" name="payment" checked>
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY20</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-red-500 text-2xl">❤</span>
+                            <span class="ml-2">PAY21</span>
+                        </div>
+                        <input type="radio" name="payment">
+                    </li>
+                </ul>
+
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <p class="text-lg font-bold mb-4">Amount</p>
+                    <div class="mb-4">
+                        <div class="flex items-center border border-orange-500 rounded-lg p-2">
+                            <input
+                                type="text"
+                                placeholder="Please enter the amount"
+                                class="flex-1 outline-none"
+                            />
+                            <div class="ml-2 text-[var(--main-logo-color)]">RS</div>
+                        </div>
+                    </div>
+                    <div class="text-right text-sm text-gray-600 mb-4">Actual account: 0 RS</div>
+                    <div class="flex justify-center my-6">
+                        <button
+                            type="button"
+                            class="bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                    <div class="text-sm text-gray-700">
+                        Recharge Instructions:<br />
+                        1. Ensure that each recharge amount is not less than 200rs; otherwise, the funds will not be credited.<br />
+                        2. It is recommended to use payment platforms such as Paytm, Google Pay, PhonePe, etc. Copy our receiving account details for the payment. (In case of risk warnings, consider changing to a new payment platform, as each bank has specified receiving limits.)<br />
+                        3. After completing the payment for recharge, copy the 12-digit UTR (Unique Transaction Reference) from the payment details page and fill it out; the funds will be automatically credited.<br />
+                        4. If your funds are not credited promptly, take a screenshot of the payment details page and send it to the account manager for verification.
+                    </div>
+                </div>
+            </div>
+
+            <div id="usdt-content" class="bg-white shadow-lg rounded-lg mt-5 hidden">
+                <h2 class="text-lg font-bold p-4">USDT Payment channel</h2>
+                <ul>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-2xl">💲</span>
+                            <span class="ml-2">USDT1</span>
+                        </div>
+                        <input type="radio" name="payment-usdt">
+                    </li>
+                    <li class="flex items-center justify-between p-4 border-b">
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-2xl">💲</span>
+                            <span class="ml-2">USDT2</span>
+                        </div>
+                        <input type="radio" name="payment-usdt">
+                    </li>
+                </ul>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <p class="text-lg font-bold mb-4">Amount</p>
+                    <div class="mb-4">
+                        <div class="flex items-center border border-orange-500 rounded-lg p-2">
+                            <input
+                                type="text"
+                                placeholder="Please enter the amount"
+                                class="flex-1 outline-none"
+                            />
+                            <div class="ml-2 text-[var(--main-logo-color)]">USDT</div>
+                        </div>
+                    </div>
+                    <div class="text-right text-sm text-gray-600 mb-4">Actual account: 0 USDT</div>
+                    <div class="flex justify-center my-6">
+                        <button
+                            type="button"
+                            class="bg-black text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                    <div class="text-sm text-gray-700">
+                        Recharge Instructions:<br />
+                        1. Ensure that each recharge amount is not less than 200rs; otherwise, the funds will not be credited.<br />
+                        2. It is recommended to use payment platforms such as Paytm, Google Pay, PhonePe, etc. Copy our receiving account details for the payment. (In case of risk warnings, consider changing to a new payment platform, as each bank has specified receiving limits.)<br />
+                        3. After completing the payment for recharge, copy the 12-digit UTR (Unique Transaction Reference) from the payment details page and fill it out; the funds will be automatically credited.<br />
+                        4. If your funds are not credited promptly, take a screenshot of the payment details page and send it to the account manager for verification.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                const rupeeBtn = document.getElementById('rupee-btn');
+                const usdtBtn = document.getElementById('usdt-btn');
+                const rupeeContent = document.getElementById('rupee-content');
+                const usdtContent = document.getElementById('usdt-content');
+
+                if (type === 'rupee') {
+                    rupeeContent.classList.remove('hidden');
+                    usdtContent.classList.add('hidden');
+                    rupeeBtn.classList.add('bg-red-500', 'text-white');
+                    rupeeBtn.classList.remove('bg-white', 'text-gray-700', 'border');
+                    usdtBtn.classList.add('bg-white', 'text-gray-700', 'border');
+                    usdtBtn.classList.remove('bg-red-500', 'text-white');
+                } else {
+                    rupeeContent.classList.add('hidden');
+                    usdtContent.classList.remove('hidden');
+                    usdtBtn.classList.add('bg-red-500', 'text-white');
+                    usdtBtn.classList.remove('bg-white', 'text-gray-700', 'border');
+                    rupeeBtn.classList.add('bg-white', 'text-gray-700', 'border');
+                    rupeeBtn.classList.remove('bg-red-500', 'text-white');
+                }
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>

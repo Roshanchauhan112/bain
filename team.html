@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div
+        class="bg-gradient-to-r from-blue-50 to-blue-100 w-full sm:w-3/4 lg:w-1/2 mx-auto mt-8 rounded-2xl shadow-lg p-6">
+        <div class="flex flex-col sm:flex-row justify-around gap-4">
+            <div class="text-center bg-white p-4 rounded-xl shadow-sm w-full sm:w-1/3">
+                <p class="text-2xl font-bold text-blue-700">Commission</p>
+                <span class="text-xl text-gray-700">0.00 RS</span>
+            </div>
+            <div class="text-center bg-white p-4 rounded-xl shadow-sm w-full sm:w-1/3">
+                <p class="text-2xl font-bold text-blue-700">Dividend</p>
+                <span class="text-xl text-gray-700">0.00 RS</span>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+            <button type="button"
+                class="px-8 py-3 rounded-full bg-gray-300 text-black font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-400">
+                My Team
+            </button>
+            <button type="button"
+                class="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-700">
+                Invitation
+            </button>
+        </div>
+    </div>
+
+
+    <div class="bg-white w-full sm:w-3/4 lg:w-1/2 mx-auto mt-4 rounded-2xl mb-16 shadow-lg p-6">
+        <div class="text-blue-700 text-2xl font-bold mb-6">Membership Level</div>
+        <div class="grid gap-4">
+            <div class="grid grid-cols-3 bg-blue-50 text-center p-2 rounded-lg font-semibold">
+                <div>Grade</div>
+                <div>Award</div>
+                <div>Salary</div>
+            </div>
+            <div class="grid grid-cols-3 text-center p-2 border rounded-lg">
+                <div>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                </div>
+                <div>300.00 RS</div>
+                <div>500.00 RS</div>
+            </div>
+            <div class="grid grid-cols-3 text-center p-2 border rounded-lg">
+                <div class="flex justify-center gap-2">
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                </div>
+                <div>500.00 RS</div>
+                <div>1000.00 RS</div>
+            </div>
+            <div class="grid grid-cols-3 text-center p-2 border rounded-lg">
+                <div class="flex justify-center gap-2">
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                </div>
+                <div>800.00 RS</div>
+                <div>1500.00 RS</div>
+            </div>
+            <div class="grid grid-cols-3 text-center p-2 border rounded-lg">
+                <div class="flex justify-center gap-2">
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                </div>
+                <div>1300.00 RS</div>
+                <div>3000.00 RS</div>
+            </div>
+            <!-- <div class="grid grid-cols-3 text-center p-2 border rounded-lg">
+                <div class="flex justify-center gap-2">
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                    <i class="fa fa-star" style="font-size:30px;color:rgba(218, 180, 13, 0.89)"></i>
+                </div>
+                <div>2000.00 RS</div>
+                <div>6000.00 RS</div>
+            </div> -->
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-lg mt-4 relative">
+            <div class="flex items-center">
+                <div class="w-8">
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                </div>
+                <div class="absolute right-2 top-1 text-black font-bold">One-star</div>
+            </div>
+            <p class="mt-2 text-gray-700">Inviting 3 first-level friends to join and purchase products worth 1300rs or
+                more will make you a One-Star Member. You will receive a monthly salary of 500rs and a one-time bonus of
+                300rs.</p>
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-lg mt-4 relative">
+            <div class="flex items-center">
+                <div class="w-8 flex gap-2">
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                </div>
+                <div class="absolute right-2 top-1 text-black font-bold">Two-star</div>
+            </div>
+            <p class="mt-2 text-gray-700">Inviting 5 first-level friends to join and purchase products worth 1300rs or
+                more will make you a Two-Star Member. You will receive a monthly salary of 1000rs and a one-time bonus
+                of 500rs.</p>
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-lg mt-4 relative">
+            <div class="flex items-center">
+                <div class="w-8 flex gap-3">
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                </div>
+                <div class="absolute right-2 top-1 text-black font-bold">Three-star</div>
+            </div>
+            <p class="mt-2 text-gray-700">Inviting 8 first-level friends to join and purchase products worth 1300rs or
+                more will make you a Three-Star Member. You will receive a monthly salary of 1500rs and a one-time bonus
+                of 800rs.</p>
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-lg mt-4 relative">
+            <div class="flex items-center">
+                <div class="w-8 flex gap-2">
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                </div>
+                <div class="absolute right-2 top-1 text-black font-bold">Four-star</div>
+            </div>
+            <p class="mt-2 text-gray-700">Inviting 12 first-level friends to join and purchase products worth 1300rs or
+                more, and among these 12, having 1 person become a Three-Star Member will make you a Four-Star Member.
+                You will receive a monthly salary of 3000rs and a one-time bonus of 1300rs.</p>
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-lg mt-4 relative">
+            <div class="flex items-center">
+                <div class="w-8 flex gap-2">
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                    <i class="fa fa-star text-yellow-400 text-3xl"></i>
+                </div>
+                <div class="absolute right-2 top-1 text-black font-bold">Five-star</div>
+            </div>
+            <p class="mt-2 text-gray-700">Inviting 15 first-level friends to join and purchase products worth 1300rs or
+                more, and among these 15, having 3 people become Three-Star Members will make you a Five-Star Member.
+                You will receive a monthly salary of 6000rs and a one-time bonus of 2000rs.</p>
+        </div>
+
+
+
+        <div class="bg-yellow-50 text-blue-700 text-center border p-4 rounded-lg mt-6">
+            Apply for last month's grade salary from the 25th to the 30th of each month
+        </div>
+
+        <button type="button"
+            class="w-full bg-blue-600 text-white py-3 rounded-full mt-4 shadow-md disabled:bg-blue-300">
+            Apply for salary
+        </button>
+
+        <div class="bg-yellow-50 p-4 rounded-lg border mt-4">
+            <p class="text-blue-700 font-semibold">Commission: Bain Community’s commission is divided into two levels, the first level commission is 7% and the second level commission is 3%.</p>
+            <p>The friends you invite are A-level friends. After A-level friends purchase products, you will receive a commission of 7% of their consumption. For example: you invite 5 A-level friends, and each of them purchases 5,000 products; The commission you get is: 5000*7%*5=1750; the commission will be credited to your account in real time.</p>
+            <p>Friends invited by A-level friends continue to invite others to join. These are your B-level friends. If there are 5 B-level friends, they all purchase 5,000 products. The B-level commission you receive is: 5000*3%*5=750.</p>
+            <p class="text-blue-700 font-semibold mt-4">Dividends: Your dividend rate is 3%. When friends you invite buy products, you can get 3% of your daily income as dividends. Every time a friend you invite receives their income, you'll receive dividends.</p>
+            <p>For example: If you invite 10 A-level friends and they all purchase 13,000 products, the product cycle of 13,000 is 270 days, and the daily income is 156rs; The daily dividend you get is: 156*3%*10=46.8rs. The total dividend received is: 46.8*270=12636rs.</p>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 w-full bg-white shadow-md flex justify-around  py-2">
+        <a href="main.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-home text-2xl"></i>
+            <span class="text-sm">Home</span>
+        </a>
+        <a href="/product.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-box text-2xl"></i>
+            <span class="text-sm">Products</span>
+        </a>
+        <a href="earning.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-wallet text-2xl"></i>
+            <span class="text-sm">Earnings</span>
+        </a>
+        <a href="team.html" class="flex flex-col items-center text-pink-500">
+            <i class="fas fa-users text-2xl"></i>
+            <span class="text-sm">Teams</span>
+        </a>
+        <a href="/user.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-user text-2xl"></i>
+            <span class="text-sm">Me</span>
+        </a>
+    </div>
+
+
+</body>
+
+</html>

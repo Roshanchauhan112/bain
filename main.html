@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bain & Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .tel_a,
+    .whatsapp_a {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 50%;
+        z-index: 1000;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* .tel_a {
+        left: 21px;
+        bottom: 105px;
+        background-color: #9d0d93;
+    } */
+
+    .whatsapp_a {
+        right: 21px;
+        top:83%;
+        background-color: #25D366;
+    }
+
+    /* Icon size */
+    .fa-phone,
+    .fa-whatsapp {
+        font-size: 20px;
+    }
+</style>
+
+<body class="bg-gray-100">
+    </a>
+    <a href="https://wa.me/+91-12344556666" class="whatsapp_a"
+        style="right: 21px; bottom: 30px; background-color: #25D366;" target="_blank" rel="noreferrer noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="65b1e799721c4.jpg" alt="" />
+
+            </div>
+
+            <div class="slide">
+                <img src="65b1e79e3e53b.jpg" alt="" />
+
+            </div>
+
+            <div class="slide">
+                <img src="65b1e7a4be84d.jpg" alt="" />
+
+            </div>
+
+            <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+            <span class="arrow next" onclick="controller(1)">&#10095;</span>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="20"
+            style="height: 50px ; width: 100%; background: #000; color: white; font-size: 20px; padding: 10px;">
+            Congratulations to ID 104**129
+            for withdrawing a total of 523267rs Congratulations to ID 102**649 for withdrawing a total of 520239rs
+            Congratulations to ID 102**824 for withdrawing a total of 528266rs Congratulations to ID 102**993 for
+            withdrawing a total of 650393rs. Congratulations to ID 103**191 for withdrawing a total of 418550rs.
+        </marquee>
+    </div>
+
+    <div class="flex justify-center items-center gap-4 mb-6">
+        <button class="bg-black text-white px-6 py-2 rounded-full flex items-center space-x-2">
+            <span>₹</span>
+            <span>Recharge</span>
+        </button>
+        <button class="bg-gray-200 text-black px-6 py-2 rounded-full flex items-center space-x-2">
+            <span>₹</span>
+            <span>Withdraws</span>
+        </button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 p-6">
+        <div class="bg-red-100 p-6 rounded-lg flex flex-col items-center">
+            <span class="text-2xl">ℹ️</span>
+            <span>About us</span>
+        </div>
+        <div class="bg-red-100 p-6 rounded-lg flex flex-col items-center">
+            <span class="text-2xl">🖥️</span>
+            <span>Website</span>
+        </div>
+        <div class="bg-red-100 p-6 rounded-lg flex flex-col items-center">
+            <span class="text-2xl">💰</span>
+            <span>Points Mall</span>
+        </div>
+        <div class="bg-red-100 p-6 rounded-lg flex flex-col items-center">
+            <span class="text-2xl">🚩</span>
+            <span>Tasks</span>
+        </div>
+    </div>
+
+    <div class=" p-6">
+        <h2 class="text-xl font-bold mb-4">News</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 mb-6">
+            <a href="news.html" class="bg-white p-4 rounded-lg shadow block">
+                <img src="https://www.bain.quest/uploads/2024/08/10/66b705d58131f.jpg" alt="AI News"
+                    class="w-full h-48 object-cover rounded-lg mb-2">
+                <h3 class="text-lg font-semibold text-xs sm:text-lg">Artificial Intelligence will bring money!</h3>
+            </a>
+            <a href="news.html" class="bg-white p-4 rounded-lg shadow block">
+                <img src="https://www.bain.quest/uploads/2024/09/12/66e29f5ddf902.jpg" alt="Energy Transition"
+                    class="w-full h-48 object-cover rounded-lg mb-2">
+                <h3 class="text-lg font-semibold text-xs sm:text-lg">Energy Transition</h3>
+            </a>
+            <a href="news.html" class="bg-white p-4 rounded-lg shadow block">
+                <img src="https://www.bain.quest/uploads/2024/05/08/663b2c4b136f2.jpg" alt="Economy India"
+                    class="w-full h-48 object-cover rounded-lg mb-2">
+                <h3 class="text-lg font-semibold text-xs sm:text-lg">e-Conomy India</h3>
+            </a>
+            <a href="news.html" class="bg-white p-4 rounded-lg shadow block">
+                <img src="https://www.bain.quest/uploads/2024/04/05/660ffc3e849d7.jpg" alt="Investment News"
+                    class="w-full h-48 object-cover rounded-lg mb-2">
+                <h3 class="text-lg font-semibold text-xs sm:text-lg">Bain Capital invests $7 billion</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class=" p-6 mb-16">
+        <h2 class="text-xl font-bold mb-4">Video</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 mb-6">
+            <a href="/video.html" class="block">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://www.bain.quest/uploads/2024/04/05/660ff9630836b.png" alt=""
+                        class="w-full h-48 object-cover rounded-lg mb-2">
+                    <h3 class="text-lg font-semibold text-xs sm:text-lg">टीम</h3>
+                </div>
+            </a>
+            <a href="/video.html" class="block">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://www.bain.quest/uploads/2024/04/05/660ff9630836b.png" alt=""
+                        class="w-full h-48 object-cover rounded-lg mb-2">
+                    <h3 class="text-lg font-semibold text-xs sm:text-lg">Team</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 w-full bg-white shadow-md flex justify-around  py-2">
+        <a href="#" class="flex flex-col items-center text-pink-500">
+            <i class="fas fa-home text-2xl"></i>
+            <span class="text-sm">Home</span>
+        </a>
+        <a href="/product.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-box text-2xl"></i>
+            <span class="text-sm">Products</span>
+        </a>
+        <a href="/earning.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-wallet text-2xl"></i>
+            <span class="text-sm">Earnings</span>
+        </a>
+        <a href="/team.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-users text-2xl"></i>
+            <span class="text-sm">Teams</span>
+        </a>
+        <a href="/user.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-user text-2xl"></i>
+            <span class="text-sm">Me</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

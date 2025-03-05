@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sm:w-[90%] lg:w-[50%] mx-auto">
+        <div class="container mx-auto py-4 px-6 flex items-center">
+            <button onclick="window.location.href='/user.html'" class="text-gray-700 hover:text-gray-900">
+                <i class="fa fa-arrow-left mr-2"></i>Back
+            </button>
+            <div class="flex-grow text-center">
+                <h1 class="text-3xl font-bold text-gray-800">Details</h1>
+            </div>
+            <div>
+                Records
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-white shadow-sm  sm:w-[90%] lg:w-[50%] mx-auto">
+        <div class="">
+            <div class="flex">
+                <button id="rupee-btn" class="w-1/2 bg-red-500 text-white py-2"
+                    onclick="showContent('rupee')">Rupee</button>
+                <button id="usdt-btn" class="w-1/2 bg-white text-gray-700 border py-2"
+                    onclick="showContent('usdt')">USDT</button>
+            </div>
+
+            <div id="rupee-content" class="bg-white shadow-lg rounded-lg mt-5">
+                <h2 class="text-lg font-bold p-4">Bank Account</h2>
+
+
+                <div class="p-4 bg-white rounded-lg shadow-md">                    
+                    <div class="recharge_top">
+                        <p class="amount_txt font-bold">Amount:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body">
+                                    <input type="text" id="van-field-25-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the amount">
+                                    <!-- <div class="van-field__right-icon text-blue-500">RS</div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="amount_txt font-bold mt-4">Payment password:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body">
+                                    <input type="password" id="van-field-26-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the payment password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="amount_txt font-bold mt-4">SMS verification code:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body flex">
+                                    <input type="text" id="van-field-27-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the SMS verification code">
+                                    <button type="button"
+                                        class="van-button bg-blue-500 text-white px-4 py-2 rounded-md ml-2">Send</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-4">
+                            <button type="button"
+                                class="van-button bg-blue-500 text-white px-6 py-2 rounded-full">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="text-sm text-gray-700">
+                        Recharge Instructions:<br />
+                        1. Ensure that each recharge amount is not less than 200rs; otherwise, the funds will not be
+                        credited.<br />
+                        2. It is recommended to use payment platforms such as Paytm, Google Pay, PhonePe, etc. Copy our
+                        receiving account details for the payment. (In case of risk warnings, consider changing to a new
+                        payment platform, as each bank has specified receiving limits.)<br />
+                        3. After completing the payment for recharge, copy the 12-digit UTR (Unique Transaction
+                        Reference) from the payment details page and fill it out; the funds will be automatically
+                        credited.<br />
+                        4. If your funds are not credited promptly, take a screenshot of the payment details page and
+                        send it to the account manager for verification.
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="usdt-content" class="bg-white shadow-lg rounded-lg mt-5 hidden">
+                <h2 class="text-lg font-bold p-4">Wallet Address</h2>
+
+
+                <div class="p-4 bg-white rounded-lg shadow-md">                    
+                    <div class="recharge_top">
+                        <p class="amount_txt font-bold">Amount:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body">
+                                    <input type="text" id="van-field-25-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the amount">
+                                    <!-- <div class="van-field__right-icon text-blue-500">RS</div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="amount_txt font-bold mt-4">Payment password:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body">
+                                    <input type="password" id="van-field-26-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the payment password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="amount_txt font-bold mt-4">SMS verification code:</p>
+                        <div class="van-cell van-field fieldbox">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body flex">
+                                    <input type="text" id="van-field-27-input"
+                                        class="van-field__control w-full p-2 border rounded-md"
+                                        placeholder="Please enter the SMS verification code">
+                                    <button type="button"
+                                        class="van-button bg-blue-500 text-white px-4 py-2 rounded-md ml-2">Send</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-4">
+                            <button type="button"
+                                class="van-button bg-blue-500 text-white px-6 py-2 rounded-full">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="text-sm text-gray-700">
+                        Recharge Instructions:<br />
+                        1. Ensure that each recharge amount is not less than 200rs; otherwise, the funds will not be
+                        credited.<br />
+                        2. It is recommended to use payment platforms such as Paytm, Google Pay, PhonePe, etc. Copy our
+                        receiving account details for the payment. (In case of risk warnings, consider changing to a new
+                        payment platform, as each bank has specified receiving limits.)<br />
+                        3. After completing the payment for recharge, copy the 12-digit UTR (Unique Transaction
+                        Reference) from the payment details page and fill it out; the funds will be automatically
+                        credited.<br />
+                        4. If your funds are not credited promptly, take a screenshot of the payment details page and
+                        send it to the account manager for verification.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                const rupeeBtn = document.getElementById('rupee-btn');
+                const usdtBtn = document.getElementById('usdt-btn');
+                const rupeeContent = document.getElementById('rupee-content');
+                const usdtContent = document.getElementById('usdt-content');
+
+                if (type === 'rupee') {
+                    rupeeContent.classList.remove('hidden');
+                    usdtContent.classList.add('hidden');
+                    rupeeBtn.classList.add('bg-red-500', 'text-white');
+                    rupeeBtn.classList.remove('bg-white', 'text-gray-700', 'border');
+                    usdtBtn.classList.add('bg-white', 'text-gray-700', 'border');
+                    usdtBtn.classList.remove('bg-red-500', 'text-white');
+                } else {
+                    rupeeContent.classList.add('hidden');
+                    usdtContent.classList.remove('hidden');
+                    usdtBtn.classList.add('bg-red-500', 'text-white');
+                    usdtBtn.classList.remove('bg-white', 'text-gray-700', 'border');
+                    rupeeBtn.classList.add('bg-white', 'text-gray-700', 'border');
+                    rupeeBtn.classList.remove('bg-red-500', 'text-white');
+                }
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>

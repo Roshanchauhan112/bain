@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bain & Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+    <!-- <style>
+        .tel_a, .whatsapp_a {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 50%;
+            z-index: 1000;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tel_a {
+            right: 21px;
+            bottom: 105px;
+            background-color: #9d0d93;
+        }
+
+        .whatsapp_a {
+            right: 21px;
+            bottom: 30px;
+            background-color: #25D366;
+        }
+
+        /* Icon size */
+        .fa-phone, .fa-whatsapp {
+            font-size: 20px;
+        }
+
+    </style>    -->
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center mb-6">Welcome</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700">Mobile Number</label>
+                <div class="flex items-center border rounded-lg p-2 bg-gray-50">
+                    <span class="text-gray-500 pr-2">+91</span>
+                    <input type="text" placeholder="Enter your mobile number" class="w-full bg-gray-50 outline-none" value="123456789" />
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Password</label>
+                <input type="password" placeholder="Enter your password"
+                    class="w-full border rounded-lg p-2 bg-gray-50 outline-none" value="1234" />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Captcha</label>
+                <div class="flex">
+                    <input type="text" placeholder="Enter captcha"
+                        class="w-full border rounded-lg p-2 bg-gray-50 outline-none" value="1234" />
+                    <span class="ml-2 text-lg font-bold bg-gray-200 p-2 rounded-lg">2063</span>
+                </div>
+            </div>
+            <button type="button" onclick="window.location.href='main.html'"
+            class="w-full bg-black text-white rounded-lg p-3 font-semibold hover:bg-gray-800 transition">Sign
+            In
+            </button>
+        </form>
+        <div class="text-center mt-4 text-gray-600">
+            - OR -
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="text-blue-600 hover:underline">Register now</a>
+        </div>
+    </div>
+</body>
+
+</html>

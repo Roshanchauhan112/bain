@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <div role="tablist" class="flex sm:flex-row gap-4 sm:gap-[10vw] justify-center border-[var(--main-logo-color)]" aria-orientation="horizontal">
+        <div id="van-tabs-44-0" role="tab" class="px-4 py-2 text-[var(--main-logo-color)] font-semibold cursor-pointer border-b-2 border-[var(--main-logo-color)]" tabindex="0" aria-selected="true">
+            <span class="truncate">Available</span>
+        </div>
+        <div id="van-tabs-44-1" role="tab" class="px-4 py-2 text-gray-500 font-semibold cursor-pointer" tabindex="-1" aria-selected="false">
+            <span class="truncate">Expired</span>
+        </div>
+    </div>
+    
+    <div class="bg-white w-full sm:w-[90%] lg:w-[60%] h-[79vh] mx-auto mt-4 rounded-lg shadow-md overflow-y-auto">
+        <div class="flex  sm:flex-row sm:h-[100px] bg-red-100 w-full text-center justify-around items-center p-4">
+            <div class="mb-4 sm:mb-0">
+                <p class="text-lg sm:text-2xl font-semibold mb-2">Spent</p>
+                <p class="text-base sm:text-xl font-semibold">0RS</p>
+            </div>
+    
+            <div class="mb-4 sm:mb-0">
+                <p class="text-lg sm:text-2xl font-semibold mb-2">Total earnings</p>
+                <p class="text-base sm:text-xl font-semibold">0RS</p>
+            </div>
+    
+            <div>
+                <p class="text-lg sm:text-2xl font-semibold mb-2">Today earnings</p>
+                <p class="text-base sm:text-xl font-semibold">0RS</p>
+            </div>
+        </div>
+    
+        <div class="flex flex-col gap-8 p-4 items-center">
+            <a href="#" class="bg-black text-white px-4 py-2 w-full sm:w-[300px] text-center text-lg sm:text-xl rounded-full shadow-md">
+                <p class="p-2">Help (Valid member)</p>
+            </a>
+            <a href="#" class="bg-black text-white px-4 py-2 w-full sm:w-[300px] text-center text-lg sm:text-xl rounded-full shadow-md">
+                <p class="p-2">Receive All</p>
+            </a>
+            <p class="border-b cursor-pointer text-sm sm:text-base">No more</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <div class="fixed bottom-0 w-full bg-white shadow-md flex justify-around  py-2">
+        <a href="main.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-home text-2xl"></i>
+            <span class="text-sm">Home</span>
+        </a>
+        <a href="/product.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-box text-2xl"></i>
+            <span class="text-sm">Products</span>
+        </a>
+        <a href="earning.html" class="flex flex-col items-center text-pink-500">
+            <i class="fas fa-wallet text-2xl"></i>
+            <span class="text-sm">Earnings</span>
+        </a>
+        <a href="team.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-users text-2xl"></i>
+            <span class="text-sm">Teams</span>
+        </a>
+        <a href="/user.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-user text-2xl"></i>
+            <span class="text-sm">Me</span>
+        </a>
+    </div>
+
+</body>
+
+</html>

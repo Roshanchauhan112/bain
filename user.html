@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-pink-100 to-orange-100 flex items-center justify-center">
+    <div class="bg-white rounded-2xl shadow-lg p-6 w-full mb-16 max-w-md">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="flex flex-col items-center justify-center p-6 ">
+                    <label for="profilePhoto" class="cursor-pointer">
+                        <div
+                            class="w-24 h-24 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
+                            <img id="photoPreview" src="https://via.placeholder.com/96" alt="Profile Photo"
+                                class="w-full h-full object-cover hidden">
+                            <span id="uploadIcon" class="text-gray-500 text-3xl">📷</span>
+                        </div>
+                    </label>
+                    <input type="file" id="profilePhoto" class="hidden" accept="image/*" onchange="previewPhoto(event)">
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-lg font-semibold">918920310518</p>
+                    <p class="text-gray-500 text-sm">ID:10799095</p>
+                </div>
+            </div>
+            <div>
+                <p class="px-4 py-2 rounded-full bg-red-400 text-white">Post: 0</p>
+            </div>
+        </div>
+        <div class="flex justify-around mt-6">
+            <div class="text-center">
+                <p class="text-gray-500">Recharge wallet</p>
+                <p class="text-xl font-semibold">₹0.00</p>
+            </div>
+            <div class="text-center">
+                <p class="text-gray-500">Balance wallet</p>
+                <p class="text-xl font-semibold">₹0.00</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mt-8">
+            <a href="./user/recharge.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-money-bill-wave text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Recharge</p>
+            </a>
+            <a href="./user/withdraw.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-university text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Withdraws</p>
+            </a>
+            <a href="./user/wallet.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-wallet text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Wallets</p>
+            </a>
+            <a href="./user/activity.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-history text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Activities</p>
+            </a>
+            <a href="./user/download.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-download text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Download</p>
+            </a>
+            <a href="./user/setting.html" class="flex flex-col items-center p-3 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <i class="fas fa-cog text-red-500 text-2xl"></i>
+            <p class="text-sm font-medium mt-1">Settings</p>
+            </a>
+        </div>
+        <div class="mt-8 space-y-4">
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Funding details</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Recharge records</span>
+                <span class="text-gray-500">0.00</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Withdrawals record</span>
+                <span class="text-gray-500">0.00</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Earnings records</span>
+                <span class="text-gray-500">0.00</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Commission records</span>
+                <span class="text-gray-500">0.00</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Dividend records</span>
+                <span class="text-gray-500">0.00</span>
+            </div>
+            <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm">
+                <span>Check new version</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 w-full bg-white shadow-md flex justify-around  py-2">
+        <a href="main.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-home text-2xl"></i>
+            <span class="text-sm">Home</span>
+        </a>
+        <a href="/product.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-box text-2xl"></i>
+            <span class="text-sm">Products</span>
+        </a>
+        <a href="earning.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-wallet text-2xl"></i>
+            <span class="text-sm">Earnings</span>
+        </a>
+        <a href="team.html" class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-users text-2xl"></i>
+            <span class="text-sm">Teams</span>
+        </a>
+        <a href="/user.html" class="flex flex-col items-center text-pink-500">
+            <i class="fas fa-user text-2xl"></i>
+            <span class="text-sm">Me</span>
+        </a>
+    </div>
+
+    <script>
+        function previewPhoto(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const preview = document.getElementById('photoPreview');
+                    const uploadIcon = document.getElementById('uploadIcon');
+                    preview.src = e.target.result;
+                    preview.classList.remove('hidden');
+                    uploadIcon.classList.add('hidden');
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+
+</html>
